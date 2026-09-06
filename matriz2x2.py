@@ -1,0 +1,8 @@
+a = int(input('valor de a: '))
+b = int(input('valor de b: '))
+c = int(input('valor de c: '))
+d = int(input('valor de d: '))
+e = int(input('valor de e: '))
+f = int(input('valor de f: '))
+print(f'el valor de x es:{(c/a)-(b/a)*(((f*a)-(d*c))/((e*a)-(d*b)))}')
+print(f'el valor de y es:{(f*a-d*c)/(e*a-d*b)}')
