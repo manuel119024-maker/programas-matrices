@@ -1,6 +1,7 @@
 # ============================================================
 # EJERCICIO NxN
 # ANÁLISIS TEMPORAL + OPTIMIZACIÓN DE POPULARIDAD
+# VERSION CON SELECCION MANUAL DEL NODO OBJETIVO
 # ============================================================
 
 import numpy as np
