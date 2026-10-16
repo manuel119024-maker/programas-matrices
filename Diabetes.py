@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 # 1. CONFIGURACION
 # ------------------------------------------------------------
 
-RUTA = Path(__file__).with_name("Obesidad(1).csv")
+RUTA = Path(__file__).with_name("Obesidad.csv")
 
 COLUMNAS = [
     "Edad",
@@ -48,6 +48,14 @@ MAX_EPOCAS = 1000
 # 2. LEER EL ARCHIVO CSV
 # ------------------------------------------------------------
 
+print("Buscando archivo en:", RUTA)
+print("¿Existe el archivo?:", RUTA.exists())
+
+print("\nArchivos CSV disponibles:")
+
+for archivo in Path(__file__).parent.glob("*.csv"):
+    print(archivo.name)
+    
 df = pd.read_csv(RUTA)
 
 if not set(COLUMNAS).issubset(df.columns):
